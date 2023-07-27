@@ -23,7 +23,7 @@
 
 <body>
     <!-- Navbar start here........................-->
-    <header class="container mx-auto lato">
+    <header class="container px-3 mx-auto lato">
         <nav class="mt-8">
             <div class="navbar bg-[#F85559] rounded-full">
                 <div class="navbar-start hidden lg:block">
@@ -46,12 +46,25 @@
                     <button class="btn btn-ghost btn-circle absolute hidden lg:flex">
                         <div><i class="fa-solid fa-magnifying-glass"></i></div>
                     </button>
-                    <button class="btn btn-ghost btn-circle  block lg:hidden absolute">
+                    <button class="btn btn-ghost btn-circle   block lg:hidden absolute dropdown dropdown-end">
                         <i class="fa-solid fa-bars text-white text-xl font-bold"></i>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 space-y-2 text-[#F85559]">
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Shop</li>
+                            <li>All Fruits</li>
+                          </ul>
                     </button>
                 </div>
             </div>
         </nav>
+        <!-- <div class="dropdown">
+            <label tabindex="0" class="btn m-1">Click</label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div> -->
         <!--Banner slider start here......................-->
         <div class="carousel w-auto h-[300px] md:h-auto mt-10 ">
             <div id="slide1" class="carousel-item relative w-full">
@@ -146,7 +159,7 @@
         </div>
     </header>
     <!-- Deal of the day Section start here................... -->
-    <main class="container mx-auto lato">
+    <main class="container px-3 mx-auto lato">
         <section class="mt-16 lg:mt-40">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div class="flex-1 space-y-5 text-center md:text-left px-5">
@@ -187,7 +200,7 @@
                 </div>
             </div>
             <!--Deal cards start here .......................-->
-            <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4">
+            <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 <div class="card bg-base-100 rounded-lg border">
                     <figure class="px-10 pt-10">
                         <img src="./images/fruit6.png" alt="" class="w-20 rounded-xl" />
